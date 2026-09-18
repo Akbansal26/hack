@@ -1,0 +1,160 @@
+{
+  "n_train_machines": 28,
+  "n_test_machines": 12,
+  "test_machines": [
+    "M000",
+    "M004",
+    "M009",
+    "M010",
+    "M012",
+    "M014",
+    "M019",
+    "M020",
+    "M022",
+    "M028",
+    "M030",
+    "M032"
+  ],
+  "random_forest": {
+    "precision": 0.7240143369175627,
+    "recall": 0.8416666666666667,
+    "f1": 0.7784200385356455,
+    "false_alarm_rate": 0.010807017543859649,
+    "tp": 202,
+    "fp": 77,
+    "fn": 38,
+    "tn": 7048,
+    "roc_auc": 0.9959385964912281
+  },
+  "naive_threshold": {
+    "precision": 0.06597707576181157,
+    "recall": 0.9833333333333333,
+    "f1": 0.12365732250458475,
+    "false_alarm_rate": 0.4689122807017544,
+    "tp": 236,
+    "fp": 3341,
+    "fn": 4,
+    "tn": 3784
+  },
+  "rf_lead_time": {
+    "mean_lead_hours": 50.0,
+    "median_lead_hours": 46.0,
+    "n_failing_machines": 5,
+    "n_missed": 0
+  },
+  "naive_lead_time": {
+    "mean_lead_hours": 293.6,
+    "median_lead_hours": 209.0,
+    "n_failing_machines": 5,
+    "n_missed": 0
+  },
+  "threshold_curves": [
+    {
+      "threshold": 0.1,
+      "precision": 0.6122448979591837,
+      "recall": 1.0,
+      "f1": 0.759493670886076,
+      "false_alarm_rate": 0.021333333333333333,
+      "mean_lead_hours": 65.2,
+      "median_lead_hours": 56.0,
+      "n_missed": 0
+    },
+    {
+      "threshold": 0.2,
+      "precision": 0.6559766763848397,
+      "recall": 0.9375,
+      "f1": 0.7718696397941681,
+      "false_alarm_rate": 0.01656140350877193,
+      "mean_lead_hours": 56.6,
+      "median_lead_hours": 49.0,
+      "n_missed": 0
+    },
+    {
+      "threshold": 0.3,
+      "precision": 0.6847133757961783,
+      "recall": 0.8958333333333334,
+      "f1": 0.776173285198556,
+      "false_alarm_rate": 0.013894736842105264,
+      "mean_lead_hours": 52.8,
+      "median_lead_hours": 48.0,
+      "n_missed": 0
+    },
+    {
+      "threshold": 0.4,
+      "precision": 0.7027027027027027,
+      "recall": 0.8666666666666667,
+      "f1": 0.7761194029850746,
+      "false_alarm_rate": 0.012350877192982456,
+      "mean_lead_hours": 51.4,
+      "median_lead_hours": 47.0,
+      "n_missed": 0
+    },
+    {
+      "threshold": 0.5,
+      "precision": 0.7240143369175627,
+      "recall": 0.8416666666666667,
+      "f1": 0.7784200385356455,
+      "false_alarm_rate": 0.010807017543859649,
+      "mean_lead_hours": 50.0,
+      "median_lead_hours": 46.0,
+      "n_missed": 0
+    },
+    {
+      "threshold": 0.6,
+      "precision": 0.7596899224806202,
+      "recall": 0.8166666666666667,
+      "f1": 0.7871485943775101,
+      "false_alarm_rate": 0.008701754385964912,
+      "mean_lead_hours": 46.4,
+      "median_lead_hours": 43.0,
+      "n_missed": 0
+    },
+    {
+      "threshold": 0.7,
+      "precision": 0.7701612903225806,
+      "recall": 0.7958333333333333,
+      "f1": 0.7827868852459017,
+      "false_alarm_rate": 0.008,
+      "mean_lead_hours": 44.8,
+      "median_lead_hours": 43.0,
+      "n_missed": 0
+    },
+    {
+      "threshold": 0.8,
+      "precision": 0.8837209302325582,
+      "recall": 0.6333333333333333,
+      "f1": 0.7378640776699029,
+      "false_alarm_rate": 0.002807017543859649,
+      "mean_lead_hours": 39.0,
+      "median_lead_hours": 38.0,
+      "n_missed": 0
+    },
+    {
+      "threshold": 0.9,
+      "precision": 0.9083969465648855,
+      "recall": 0.49583333333333335,
+      "f1": 0.6415094339622641,
+      "false_alarm_rate": 0.0016842105263157896,
+      "mean_lead_hours": 32.8,
+      "median_lead_hours": 36.0,
+      "n_missed": 0
+    }
+  ],
+  "top_features": {
+    "pressure_std_72": 0.09852070774885215,
+    "current_std_72": 0.08984689853641685,
+    "vibration_std_72": 0.07200329023026024,
+    "current_max_24": 0.06837990459333491,
+    "temperature_std_72": 0.0653983176109429,
+    "vibration_max_72": 0.04926473664163351,
+    "current_max_6": 0.046972537053309164,
+    "vibration_std_24": 0.04618548590220848,
+    "vibration_max_24": 0.04607896486115244,
+    "pressure_mean_6": 0.04422304330875553,
+    "vibration_max_6": 0.04040781622512836,
+    "temperature_mean_6": 0.04031426208568208,
+    "current_min_6": 0.028803681573790613,
+    "temperature_max_6": 0.024968010086943382,
+    "current_mean_24": 0.024901844030970705
+  }
+}
